@@ -1,2 +1,23 @@
 @charset "utf-8";
 
+body {
+    font-family: 'Hiragino Kaku Gothic ProN';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 40px;
+    color: #888888;
+  }
+
+h1 {
+    font-family: 'Arial Hebrew';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 128px;
+    line-height: 136px;
+    color: blue;
+  }
+
+h3 {
+    color: black;
+}
