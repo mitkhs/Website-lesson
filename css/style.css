@@ -21,3 +21,30 @@ h1 {
 h3 {
     color: black;
 }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+  }
+  
+  .header img {
+    max-width: 100px;
+  }
+  
+  .site-menu {
+    display: flex;
+  }
+  
+  .site-menu a {
+    margin-left: 10px;
+    text-decoration: none;
+    color: #888888;
+  }
+
+.main-visual {
+    width: 1450px;
+    height: 636px;
+} 
