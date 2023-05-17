@@ -48,3 +48,12 @@ h3 {
     width: 1450px;
     height: 636px;
 } 
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 100px 0px;
+}
+
+ 
