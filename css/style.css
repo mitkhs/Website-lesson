@@ -22,6 +22,12 @@ h3 {
     color: black;
 }
 
+.box {
+    padding: 40px;
+    display: grid;
+    gap: 40px;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,7 @@ h3 {
 .main-visual {
     width: 1450px;
     height: 636px;
+    padding: 40px;
 } 
 
 .about {
@@ -55,5 +62,3 @@ h3 {
     align-items: flex-start;
     padding: 100px 0px;
 }
-
- 
