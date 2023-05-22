@@ -130,3 +130,29 @@ footer a:hover {
 footer p {
     color: lightgrey;
 }
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 497px;
+}
+
+.footer-menu-block {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 51px;
+}
+
+.footer-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
