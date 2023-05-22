@@ -109,3 +109,24 @@ h3 {
     padding: 100px 0px;
     gap: 80px;
  }
+
+ .member-image {
+    height: 250px;
+ }
+
+footer {
+    background-color: #888888;
+}
+
+footer a {
+    text-decoration: none;
+    color: lightgrey;
+}
+
+footer a:hover {
+    color: #f2f2f2;
+}
+
+footer p {
+    color: lightgrey;
+}
