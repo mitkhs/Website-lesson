@@ -71,13 +71,13 @@ h3 {
     padding: 0px 30px;
  }
 
- .main_image_container {
+.main-image-container {
     margin-left: 196px;
     overflow: hidden;
     padding-top: 56px;
   }
  
- .main_image {
+ .main-image {
     max-width: 100%;
     height: auto;
 }
