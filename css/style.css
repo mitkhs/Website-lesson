@@ -37,7 +37,7 @@ h3 {
     background-color: #f2f2f2; /*わかりやすいように変えています（希望は白背景にぼかし）*/
   }
   
-  .site-name {
+  .logo {
     font-size: 32px;
     text-decoration: none;
     color: blue;
@@ -115,7 +115,13 @@ h3 {
  }
 
 footer {
+    display: block;
+    padding: 90px 150px;
     background-color: #888888;
+}
+
+.logo-footer {
+    font-size: 64px;
 }
 
 footer a {
@@ -129,15 +135,13 @@ footer a:hover {
 
 footer p {
     color: lightgrey;
+    line-height: 20px;
 }
 
-.footer-block {
+.footer-menu {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0px;
-    gap: 497px;
+    flex-direction: column;
+    margin: 0;
 }
 
 .footer-menu-block {
@@ -148,11 +152,20 @@ footer p {
     gap: 51px;
 }
 
-.footer-menu {
+.footer-block {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px lightgrey;
+    padding-bottom: 30px;
+}
+
+.sns-icon {
+    text-align: end;
+}
+
+.copylight {
+    text-align: center;
+    padding-top: 30px;
 }
