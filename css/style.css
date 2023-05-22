@@ -56,21 +56,30 @@ h3 {
   }
 
 .main-visual {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 120px;
+    position: relative;
  }
 
  .phrase-box {
     position: absolute;
+    top: 0;
+    font-size: 128px;
+    line-height: 1.2;
+    margin: 0;
  } 
  
  .phrase {
     padding: 0px 30px;
  }
+
+ .main_image_container {
+    margin-left: 196px;
+    overflow: hidden;
+    padding-top: 56px;
+  }
  
- .right-align {
-    padding-top: 70px;
+ .main_image {
+    max-width: 100%;
+    height: auto;
 }
 
 .about {
