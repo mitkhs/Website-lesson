@@ -95,23 +95,18 @@ h3 {
 }
 
  .member-info {
-    display:inline-block;
- }
-
- .member-box-block {
-    padding: 0px 200px;
+    display: block;
  }
 
  .member-box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 100px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 100px 200px;
     gap: 80px;
  }
 
  .member-image {
-    height: 250px;
+    height: 180px;
  }
 
 footer {
@@ -129,7 +124,7 @@ footer a {
     color: lightgrey;
 }
 
-footer a:hover {
+.footer-link:hover {
     color: #f2f2f2;
 }
 
