@@ -57,6 +57,7 @@ h3 {
 
 .main-visual {
     position: relative;
+    margin: 80px 0;
  }
 
  .phrase-box {
@@ -111,8 +112,9 @@ h3 {
 
 footer {
     display: block;
-    padding: 90px 150px;
+    padding: 130px 90px 30px;
     background-color: #888888;
+    margin-top: 200px;
 }
 
 .logo-footer {
@@ -122,6 +124,8 @@ footer {
 footer a {
     text-decoration: none;
     color: lightgrey;
+    line-height: 50px;
+    
 }
 
 .footer-link:hover {
@@ -153,7 +157,7 @@ footer p {
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px lightgrey;
-    padding-bottom: 30px;
+    padding-bottom: 60px;
 }
 
 .sns-icon {
@@ -162,5 +166,5 @@ footer p {
 
 .copylight {
     text-align: center;
-    padding-top: 30px;
+    padding-top: 60px;
 }
