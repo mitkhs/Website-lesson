@@ -1,33 +1,26 @@
 @charset "utf-8";
 
-body {
+.box {
     font-family: 'Hiragino Kaku Gothic ProN';
     font-style: normal;
-    font-weight: 300;
     font-size: 24px;
-    line-height: 40px;
-    color: #888888;
+    display: grid;
+    gap: 40px;
   }
 
   
 
-h1 {
+.title {
     font-family: 'Arial Hebrew';
     font-style: normal;
     font-weight: 300;
     font-size: 128px;
     line-height: 136px;
     color: blue;
-    padding: 0px 80px;
   }
 
-h3 {
-    color: black;
-}
-
-.box {
-    display: grid;
-    gap: 40px;
+.name {
+    color: #888888;
 }
 
 .header {
@@ -55,12 +48,16 @@ h3 {
     color: #888888;
   }
 
+.content-container {
+    margin: 0 80px;
+}
+
 .main-visual {
     position: relative;
     margin: 80px 0;
  }
 
- .phrase-box {
+ .title-box {
     position: absolute;
     top: 0;
     font-size: 128px;
@@ -68,7 +65,7 @@ h3 {
     margin: 0;
  } 
  
- .phrase {
+ .title-padding {
     padding: 0px 30px;
  }
 
@@ -91,8 +88,9 @@ h3 {
  }
 
  .about-text {
-    padding: 200px 80px;
+    padding: 200px 0;
     line-height: 55px;
+    color: #888888;
 }
 
  .member-info {
@@ -102,7 +100,7 @@ h3 {
  .member-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 100px 200px;
+    padding: 100px;
     gap: 80px;
  }
 
@@ -110,9 +108,11 @@ h3 {
     height: 180px;
  }
 
-footer {
-    display: block;
+.footer {
+    display: flex;
+    flex-direction: column;
     padding: 130px 90px 30px;
+    color: lightgray;
     background-color: #888888;
     margin-top: 200px;
 }
@@ -121,26 +121,26 @@ footer {
     font-size: 64px;
 }
 
-footer a {
-    text-decoration: none;
-    color: lightgrey;
-    line-height: 50px;
-    
-}
-
 .footer-link:hover {
     color: #f2f2f2;
 }
 
-footer p {
-    color: lightgrey;
-    line-height: 20px;
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
 }
 
-.footer-menu {
+.circle {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    gap: 0;
+    font-size: 16px;
+}
+
+.footer-link-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .footer-menu-block {
