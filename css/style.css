@@ -5,7 +5,7 @@
     font-style: normal;
     font-size: 24px;
     display: grid;
-    gap: 40px;
+    gap: 50px;
   }
 
   
@@ -26,6 +26,7 @@
 .header {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 30px;
     background-color: #f2f2f2; /*わかりやすいように変えています（希望は白背景にぼかし）*/
   }
