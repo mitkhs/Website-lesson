@@ -6,7 +6,7 @@
     font-size: 24px;
     display: grid;
     gap: 50px;
-  }
+}
 
   
 
@@ -17,7 +17,7 @@
     font-size: 128px;
     line-height: 136px;
     color: blue;
-  }
+}
 
 .name {
     color: #888888;
@@ -29,29 +29,29 @@
     align-items: center;
     padding: 30px;
     background-color: #f2f2f2; /*わかりやすいように変えています（希望は白背景にぼかし）*/
-  }
+}
   
-  .logo {
+.logo {
     font-size: 32px;
     text-decoration: none;
     color: blue;
-  }
+}
   
-  .site-menu {
+.site-menu {
     display: flex;
     gap: 50px;
-  }
+}
   
-  .header-link {
+.header-link {
     font-size: 20px;
     margin-left: 10px;
     text-decoration: none;
     color: #888888;
-  }
+}
 
-  .header-link:hover {
+.header-link:hover {
     color: blue;
-  } 
+} 
 
 .content-container {
     margin: 0 80px;
@@ -59,27 +59,27 @@
 
 .main-visual {
     position: relative;
- }
+}
 
- .title-box {
+.title-box {
     position: absolute;
     top: 0;
     font-size: 128px;
     line-height: 1.2;
     margin: 0;
- } 
+} 
  
- .title-padding {
+.title-padding {
     padding: 0px 30px;
- }
+}
 
 .main-image-container {
     margin-left: 196px;
     overflow: hidden;
     padding-top: 56px;
-  }
+}
  
- .main-image {
+.main-image {
     max-width: 100%;
     height: auto;
 }
@@ -89,28 +89,28 @@
     flex-direction: column;
     align-items: flex-start;
     padding: 100px 0;
- }
+}
 
- .about-text {
+.about-text {
     padding: 200px 0;
     line-height: 55px;
     color: #888888;
 }
 
- .member-info {
+.member-info {
     display: block;
- }
+}
 
- .member-box {
+.member-box {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 100px;
     gap: 80px;
- }
+}
 
- .member-image {
+.member-image {
     height: 180px;
- }
+}
 
 .footer {
     display: flex;
