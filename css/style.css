@@ -41,12 +41,16 @@
     gap: 50px;
   }
   
-  .site-menu a {
+  .header-link {
     font-size: 20px;
     margin-left: 10px;
     text-decoration: none;
     color: #888888;
   }
+
+  .header-link:hover {
+    color: blue;
+  } 
 
 .content-container {
     margin: 0 80px;
@@ -54,7 +58,6 @@
 
 .main-visual {
     position: relative;
-    margin: 80px 0;
  }
 
  .title-box {
