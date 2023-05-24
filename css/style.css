@@ -1,31 +1,26 @@
 @charset "utf-8";
 
-body,p {
+.box {
     font-family: 'Hiragino Kaku Gothic ProN';
     font-style: normal;
-    font-weight: 300;
     font-size: 24px;
-    line-height: 40px;
-    color: #888888;
-  }
+    display: grid;
+    gap: 50px;
+}
 
-h1 {
+  
+
+.title {
     font-family: 'Arial Hebrew';
     font-style: normal;
     font-weight: 300;
     font-size: 128px;
     line-height: 136px;
     color: blue;
-    padding: 0px 80px;
-  }
-
-h3 {
-    color: black;
 }
 
-.box {
-    display: grid;
-    gap: 40px;
+.name {
+    color: #888888;
 }
 
 .header {
@@ -34,54 +29,149 @@ h3 {
     align-items: center;
     padding: 30px;
     background-color: #f2f2f2; /*わかりやすいように変えています（希望は白背景にぼかし）*/
-  }
+}
   
-  .site-name {
+.logo {
     font-size: 32px;
     text-decoration: none;
     color: blue;
-  }
+}
   
-  .site-menu {
+.site-menu {
     display: flex;
     gap: 50px;
-  }
+}
   
-  .site-menu a {
+.header-link {
     font-size: 20px;
     margin-left: 10px;
     text-decoration: none;
     color: #888888;
-  }
+}
 
+.header-link:hover {
+    color: blue;
+} 
+
+.content-container {
+    margin: 0 80px;
+}
+
+.main-visual {
+    position: relative;
+}
+
+.title-box {
+    position: absolute;
+    top: 0;
+    font-size: 128px;
+    line-height: 1.2;
+    margin: 0;
+} 
+ 
+.title-padding {
+    padding: 0px 30px;
+}
+
+.main-image-container {
+    margin-left: 196px;
+    overflow: hidden;
+    padding-top: 56px;
+}
+ 
+.main-image {
+    max-width: 100%;
+    height: auto;
+}
 
 .about {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 100px 0px;
+    padding: 100px 0;
 }
 
- .about-text {
-    padding: 120px 80px;
-    line-height: 50px;
- }
+.about-text {
+    padding: 200px 0;
+    line-height: 55px;
+    color: #888888;
+}
 
- .member-info {
-    display:inline-block;
- }
+.member-info {
+    display: block;
+}
 
- .member-box-block {
-    padding: 0px 200px;
- }
+.member-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 100px;
+    gap: 80px;
+}
 
- .member-box {
+.member-image {
+    height: 180px;
+}
+
+.footer {
     display: flex;
     flex-direction: column;
+    padding: 130px 90px 30px;
+    color: lightgray;
+    background-color: #888888;
+    margin-top: 200px;
+}
+
+.logo-footer {
+    font-size: 64px;
+}
+
+.footer-link:hover {
+    color: #f2f2f2;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    font-size: 16px;
+}
+
+.footer-link-block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-menu-block {
+    display: flex;
+    flex-direction: row;
     align-items: flex-start;
-    padding: 100px 0px;
-    gap: 80px;
- }
+    padding: 0px;
+    gap: 51px;
+}
+
+.footer-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px lightgrey;
+    padding-bottom: 60px;
+}
+
+.sns-icon {
+    text-align: end;
+}
+
+.copylight {
+    text-align: center;
+    padding-top: 60px;
+}
 
  @media screen and (max-width:480px) {
     .box {
