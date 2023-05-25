@@ -101,18 +101,21 @@
 }
 
 .member-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .member-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 100px;
     gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))/*
+    grid-template-columns: 1fr 1fr 1fr 1fr;*/
 }
 
 .member-image {
-    height: 180px;
+    width: 180px;
+    height: auto;
 }
 
 .footer {
@@ -222,7 +225,6 @@
     }
 
     .member-box {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         padding: 20px;
         gap: 20px;
