@@ -109,8 +109,8 @@
     display: grid;
     padding: 100px;
     gap: 80px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr))/*
-    grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));/*
+    変更前　grid-template-columns: 1fr 1fr 1fr 1fr;*/
 }
 
 .member-image {
