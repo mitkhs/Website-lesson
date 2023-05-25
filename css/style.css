@@ -3,8 +3,7 @@
 .box {
     font-family: 'Hiragino Kaku Gothic ProN';
     font-style: normal;
-    font-size: 24px;/*
-    display: grid;*/
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -109,8 +108,7 @@
     display: grid;
     padding: 100px;
     gap: 80px;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));/*
-    変更前　grid-template-columns: 1fr 1fr 1fr 1fr;*/
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .member-image {
