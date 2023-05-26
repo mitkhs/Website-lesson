@@ -4,7 +4,8 @@
     font-family: 'Hiragino Kaku Gothic ProN';
     font-style: normal;
     font-size: 24px;
-    display: grid;
+    display: flex;
+    flex-direction: column;
     gap: 50px;
 }
 
@@ -54,6 +55,8 @@
 } 
 
 .content-container {
+    display: flex;
+    flex-direction: column;
     margin: 0 80px;
 }
 
@@ -64,7 +67,6 @@
 .title-box {
     position: absolute;
     top: 0;
-    font-size: 128px;
     line-height: 1.2;
     margin: 0;
 } 
@@ -98,18 +100,20 @@
 }
 
 .member-info {
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .member-box {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
     padding: 100px;
     gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 }
 
 .member-image {
-    height: 180px;
+    width: 180px;
+    height: auto;
 }
 
 .footer {
@@ -119,26 +123,6 @@
     color: lightgray;
     background-color: #888888;
     margin-top: 200px;
-}
-
-.logo-footer {
-    font-size: 64px;
-}
-
-.footer-link:hover {
-    color: #f2f2f2;
-}
-
-.footer-link {
-    text-decoration: none;
-    color: lightgray;
-}
-
-.circle {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    font-size: 16px;
 }
 
 .footer-link-block {
@@ -164,6 +148,25 @@
     padding-bottom: 60px;
 }
 
+.logo-footer {
+    font-size: 64px;
+}
+
+.footer-link:hover {
+    color: #f2f2f2;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: lightgray;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
 .sns-icon {
     text-align: end;
 }
@@ -171,4 +174,104 @@
 .copylight {
     text-align: center;
     padding-top: 60px;
+}
+
+@media screen and (max-width:480px) {
+    .box {
+        font-size: 14px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .site-menu {
+        display: none;
+    }
+
+    .title {
+        line-height: 50px;
+    }
+
+    .main-image-container {
+        margin-left: 62px;
+        padding-top: 15px;
+        padding-bottom: 50px;
+    }
+
+    .main-image {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+
+    .content-container {
+        margin: 20px;
+    }
+
+    .about-text {
+        padding: 100px 0;
+        line-height: 30px;
+    }
+
+    .br-pc {
+        display: none;
+    }
+
+    .member-box {
+        grid-template-columns: 1fr 1fr;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .member-image {
+        width: 150px;
+        height: auto;
+    }
+
+    .footer {
+        padding: 30px 40px 10px;
+        margin-top: 0px;
+    }
+
+    .footer-menu-block {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer-block {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding-bottom: 20px;
+    }
+
+    .logo-footer {
+        font-size: 36px;
+    }
+
+    .footer-link {
+        font-size: 24px;
+    }
+
+    .footer-address-title {
+        font-size: 24px;
+    }
+
+    .sns-icon {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        padding-top: 20px;
+    }
+
+    .copylight {
+        padding-top: 20px;
+    }
 }
