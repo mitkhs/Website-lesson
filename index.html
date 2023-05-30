@@ -9,6 +9,7 @@
     <!--css-->
     <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/slick.css">
 </head>
 <body>
 
@@ -22,6 +23,19 @@
                 <a class="header-link" href="News/news.html">News</a>
                 <a class="header-link" href="#">Contact</a>
             </div>
+
+            <div class="hamburger-icon">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+
+            <div class="hamburger-menu">
+                <a class="hamburger-link" href="#">About</a>
+                <a class="hamburger-link" href="News/news.html">News</a>
+                <a class="hamburger-link" href="#">Contact</a>
+            </div>
+              
         </div>
     
         <div class="main-visual">
@@ -35,6 +49,7 @@
                 <img src="image/main.jpg" alt="メイン画像" class="main-image">
             </div>
         </div>
+
         <div class="content-container">
             <div class="about">
                 <h1 class="title">About</h1>
@@ -116,7 +131,46 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+            <div class="faq">
+                <h1 class="title">Q&A</h1>
+
+                <div class="accordion">
+                    <div class="accordion-item">
+                      <div class="accordion-header">Q 1</div>
+                      <div class="accordion-content">
+                            <p class="answer">A</p>
+                      </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                      <div class="accordion-header">Q 2</div>
+                      <div class="accordion-content">
+                            <p class="answer">A</p>
+                      </div>
+                    </div>
+                      
+                    <div class="accordion-item">
+                      <div class="accordion-header">Q 3</div>
+                      <div class="accordion-content">
+                            <p class="answer">A</p>
+                      </div>
+                    </div>
+
+                </div>
+            
+            </div>  
+            
+            <div class="slider">
+                <div class="slider-item">Slide 1</div>
+                <div class="slider-item">Slide 2</div>
+                <div class="slider-item">Slide 3</div>
+                <div class="slider-item">Slide 4</div>
+                <div class="slider-item">Slide 5</div>
+                <div class="slider-item">Slide 6</div>
+            </div>
+                  
+        </div>          
     
         <footer class="footer">
             <div class="footer-block">
@@ -155,6 +209,33 @@
             <p class="copylight">&copy;website</p>
         </footer>
     </div>
+    
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="./slick.js"></script>
+    <script>
+
+        $('.hamburger-icon').click(function(){
+            $('.hamburger-icon').toggleClass('is-active');
+            $('.hamburger-menu').toggleClass('is-active');
+        });
+
+        $(document).ready(function() {
+            $('.accordion-header').click(function() {
+            $(this).toggleClass('active');
+            $(this).next('.accordion-content').slideToggle();
+            });
+        });
+        
+        $('.slider').slick({
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+
+    </script>
+    
+    <script src="js/script.js"></script>
     
 </body>
 </html>
